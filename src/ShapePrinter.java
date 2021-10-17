@@ -1,11 +1,14 @@
 public class ShapePrinter {
-    private final Shape shape;
+    private Shape shape;
 
-    public ShapePrinter(Shape shape) {
+    public ShapePrinter() {
+    }
+
+    public void setShape(Shape shape) {
         this.shape = shape;
     }
 
-    public void print() {
+    public void print(Shape shape) {
         shape.printName();
     }
 }
